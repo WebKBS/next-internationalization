@@ -3,17 +3,20 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
+type Params = Promise<{ locale: never }>;
+
 export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Params;
 }) {
-  const { locale } = await params;
+  const { locale } = await params; // next js 15버전부터 Params 사용시 비동기로 변경됨
+  // https://nextjs.org/docs/messages/sync-dynamic-apis
 
   // 들어오는 `로케일`이 유효한지 확인하세요.
-  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
 

@@ -1,6 +1,7 @@
 {
-  "home": {
+  "Home": {
     "title": "Home",
-    "description": "Welcome to the home page."
+    "description": "Welcome to the home page.",
+    "welcome": "Welcome to the home page, {name}!"
   }
 }

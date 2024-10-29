@@ -1,6 +1,7 @@
 {
-  "home": {
+  "Home": {
     "title": "ホーム",
-    "description": "ホームページへようこそ。"
+    "description": "ホームページへようこそ。",
+    "welcome": "ホームページへようこそ、{name}さん！"
   }
 }
