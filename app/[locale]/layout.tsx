@@ -18,14 +18,13 @@ export default async function LocaleLayout({
   }
 
   // 클라이언트에게 모든 메시지 제공
-  // side는 시작하는 가장 쉬운 방법입니다.
   const messages = await getMessages();
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <html lang={locale}>
+    <html lang={locale}>
+      <NextIntlClientProvider messages={messages}>
         <body>{children}</body>
-      </html>
-    </NextIntlClientProvider>
+      </NextIntlClientProvider>
+    </html>
   );
 }

@@ -15,6 +15,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    messages: (await import(`../messages/${locale}.json`)).default,
+    messages: (await import(`../messages/${locale}.json`)).default, // 상대 경로 확인, messages 폴더에 JSON 파일이 있어야 함
   };
 });
