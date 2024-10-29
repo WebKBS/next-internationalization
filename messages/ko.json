@@ -3,5 +3,9 @@
     "title": "홈",
     "description": "홈 페이지에 오신 것을 환영합니다.",
     "welcome": "홈 페이지에 오신 것을 환영합니다, {name}님!"
+  },
+  "Error": {
+      "title": "오류",
+      "description": "오류가 발생했습니다."
   }
 }

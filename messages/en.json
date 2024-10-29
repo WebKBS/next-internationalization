@@ -3,5 +3,9 @@
     "title": "Home",
     "description": "Welcome to the home page.",
     "welcome": "Welcome to the home page, {name}!"
+  },
+  "Error": {
+    "title": "Error",
+    "description": "An error occurred."
   }
 }

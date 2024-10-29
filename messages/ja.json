@@ -3,5 +3,9 @@
     "title": "ホーム",
     "description": "ホームページへようこそ。",
     "welcome": "ホームページへようこそ、{name}さん！"
+  },
+  "Error": {
+    "title": "エラー",
+    "description": "エラーが発生しま��た。"
   }
 }

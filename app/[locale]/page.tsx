@@ -4,6 +4,9 @@ import Link from "next/link";
 
 export default function Home() {
   const t = useTranslations("Home");
+
+  // throw new Error("Something went wrong!");
+
   return (
     <main>
       <h1>{t("title")}</h1>
